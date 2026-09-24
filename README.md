@@ -1,42 +1,36 @@
-MATRIXPS4
+# MATRIXPS4
 
 Host web personalizado para acesso pelo navegador do PlayStation 4, com interface inspirada no tema Matrix e suporte a cache offline do navegador.
 
-Acesso
+## Acesso
 
-Página direta:
+**Página direta:**  
 https://MrAndersonRPC.github.io/MATRIXPS4/jb.html
 
-Recursos
+## Recursos
 
-Interface personalizada MATRIXPS4.
+- Interface personalizada MATRIXPS4.
+- Tema visual Matrix em preto e verde.
+- Logo própria `logo_raw.png`.
+- Indicador visual de carregamento durante a execução da página.
+- Cache offline por meio de `cache.appcache`.
+- Acesso rápido pelo sistema de Favoritos do navegador do PS4.
+- Arquivos organizados para publicação pelo GitHub Pages.
+- Estrutura mantida localmente no próprio repositório, sem depender do endereço do projeto de origem.
 
-Tema visual Matrix em preto e verde.
-
-Logo própria logo_raw.png.
-
-Indicador visual de carregamento durante a execução da página.
-
-Cache offline por meio de cache.appcache.
-
-Acesso rápido pelo sistema de Favoritos do navegador do PS4.
-
-Arquivos organizados para publicação pelo GitHub Pages.
-
-Estrutura mantida localmente no próprio repositório, sem depender do endereço do projeto de origem.
-
-Uso pelo navegador do PS4
+## Uso pelo navegador do PS4
 
 Na primeira utilização, acesse a página com conexão à internet e aguarde o carregamento dos arquivos do cache.
 
-Depois, salve a página nos Favoritos do navegador do PS4 para facilitar os próximos acessos.
+Depois, salve a página nos **Favoritos** do navegador do PS4 para facilitar os próximos acessos.
 
 Quando o cache estiver corretamente armazenado no console, os arquivos disponíveis offline poderão ser carregados sem depender novamente do endereço original de terceiros.
 
-Importante: apagar cookies, dados de sites ou o cache do navegador do PS4 pode remover os arquivos armazenados para uso offline.
+> **Importante:** apagar cookies, dados de sites ou o cache do navegador do PS4 pode remover os arquivos armazenados para uso offline.
 
-Estrutura principal
+## Estrutura principal
 
+```text
 MATRIXPS4/
 ├── index.html
 ├── jb.html
@@ -53,18 +47,19 @@ MATRIXPS4/
 ├── hen.bin
 ├── ps4debug.bin
 └── patches/
+```
 
-Hospedagem
+## Hospedagem
 
-Este repositório foi preparado para publicação pelo GitHub Pages a partir da branch main e da pasta raiz /.
+Este repositório foi preparado para publicação pelo **GitHub Pages** a partir da branch `main` e da pasta raiz `/`.
 
 Endereço do projeto:
 
 https://MrAndersonRPC.github.io/MATRIXPS4/
 
-Identidade
+## Identidade
 
-MATRIXPS4
-MATRIX HOST
+**MATRIXPS4**  
+**MATRIX HOST**
 
-Personalização do projeto: MrAndersonRPC
+Personalização do projeto: **MrAndersonRPC**
