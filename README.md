@@ -49,6 +49,20 @@ MATRIXPS4/
 └── patches/
 ```
 
+
+## Modo offline-first
+
+Esta versão foi preparada para reduzir dependências de rede depois que o cache do navegador estiver instalado:
+
+- a telemetria HTTP `POST /t` do script foi desativada;
+- o manifesto inclui todos os patches `.bin` existentes neste repositório;
+- `jb.js`, módulos JavaScript, workers, logo e payloads existentes são armazenados pelo AppCache;
+- a regra `NETWORK: *` foi removida para que recursos ausentes não sejam buscados silenciosamente pela rede.
+
+Na primeira carga ou quando o manifesto for atualizado, mantenha o PS4 online até o cache terminar. Depois disso, os recursos listados no manifesto podem ser atendidos pelo cache do navegador.
+
+**Observação técnica:** o código original ainda possui uma seleção genérica de `payload.bin` para algumas tabelas de firmware, mas esse arquivo não existe neste repositório. Esta versão não altera a seleção de payload por firmware, pois trocar um payload sem validação em hardware pode afetar a estabilidade.
+
 ## Hospedagem
 
 Este repositório foi preparado para publicação pelo **GitHub Pages** a partir da branch `main` e da pasta raiz `/`.
@@ -63,3 +77,7 @@ https://MrAndersonRPC.github.io/MATRIXPS4/
 **MATRIX HOST**
 
 Personalização do projeto: **MrAndersonRPC**
+
+---
+
+Uso destinado ao ambiente e ao equipamento do próprio usuário. Mantenha uma cópia local do repositório para não depender exclusivamente da hospedagem online.

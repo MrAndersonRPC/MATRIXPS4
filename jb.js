@@ -11,18 +11,11 @@ let passCount = 0,
 const params = new URLSearchParams(location.search);
 const STOP_BEFORE_DOUBLE = params.get("stop") === "beforedouble";
 
+// Offline-first build: remote telemetry is intentionally disabled.
+// Keeping this function as a no-op avoids changing the exploit/logging flow.
 function post(tag, detail) {
-  try {
-    const x = new XMLHttpRequest();
-    x.open("POST", "/t", true);
-    x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    x.send(
-      "PS4-JB&tag=" +
-        encodeURIComponent(tag) +
-        "&detail=" +
-        encodeURIComponent(String(detail == null ? "" : detail)),
-    );
-  } catch (e) {}
+  void tag;
+  void detail;
 }
 
 const VERBOSE = params.get("verbose") === "1";
