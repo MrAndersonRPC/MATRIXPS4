@@ -77,7 +77,3 @@ https://MrAndersonRPC.github.io/MATRIXPS4/
 **MATRIX HOST**
 
 Personalização do projeto: **MrAndersonRPC**
-
----
-
-Uso destinado ao ambiente e ao equipamento do próprio usuário. Mantenha uma cópia local do repositório para não depender exclusivamente da hospedagem online.
