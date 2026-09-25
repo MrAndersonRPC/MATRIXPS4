@@ -127,9 +127,32 @@
         0%, 100% { box-shadow: 0 0 24px rgba(255,84,84,0.08); }
         50%      { box-shadow: 0 0 30px rgba(255,84,84,0.18); }
       }
+      #stability {
+        position: fixed;
+        top: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(860px, calc(100vw - 28px));
+        padding: 11px 16px;
+        background: linear-gradient(180deg, rgba(20, 25, 8, 0.96), rgba(10, 16, 7, 0.94));
+        color: #efffcf;
+        border: 1px solid rgba(215, 255, 94, 0.32);
+        border-radius: 14px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.45;
+        box-shadow: 0 0 22px rgba(188, 255, 71, 0.07);
+        z-index: 4;
+      }
+      #stability b { color: #dfff74; }
+      #stability strong { color: #ffffff; }
+      body.done #stability {
+        border-color: rgba(57, 255, 147, 0.48);
+        box-shadow: 0 0 24px rgba(57, 255, 147, 0.11);
+      }
       #spin {
         position: fixed;
-        top: calc(50% + 18px);
+        top: calc(50% + 48px);
         left: 50%;
         width: 66px;
         height: 66px;
@@ -163,7 +186,7 @@
       }
       #wrap {
         position: fixed;
-        inset: 154px 14px 86px;
+        inset: 228px 14px 86px;
         padding: 0;
       }
       #state, #out { display: none; }
@@ -173,7 +196,7 @@
       body.log #spin,
       body.log #msg { display: none; }
       body.log #wrap {
-        inset: 154px 14px 72px;
+        inset: 228px 14px 72px;
       }
       body.log #state {
         display: block;
@@ -200,7 +223,7 @@
         border: 1px solid rgba(0, 210, 106, 0.22);
         border-radius: 16px;
         padding: 14px 16px;
-        height: calc(100vh - 248px);
+        height: calc(100vh - 322px);
         overflow-y: auto;
         box-shadow: 0 8px 28px rgba(0,0,0,0.22), inset 0 0 0 1px rgba(57,255,147,0.04);
       }
@@ -236,8 +259,9 @@
         #brand-text b { font-size: 18px; letter-spacing: 0.12em; }
         #brand-text span { font-size: 10px; letter-spacing: 0.18em; }
         #warn { top: 92px; font-size: 12px; padding: 12px 14px; }
-        #wrap { inset: 148px 10px 84px; }
-        body.log #wrap { inset: 148px 10px 72px; }
+        #stability { top: 151px; font-size: 10px; padding: 9px 12px; }
+        #wrap { inset: 220px 10px 84px; }
+        body.log #wrap { inset: 220px 10px 72px; }
         #foot { font-size: 10px; letter-spacing: 0.08em; }
       }
     </style>
@@ -251,6 +275,7 @@
       </div>
     </div>
     <div id="warn">&#9888; Compatível com firmwares <b>11.00 até 13.52</b>. Para abrir o script sem internet, salve esta página nos favoritos do navegador do PS4. &#9888;</div>
+    <div id="stability"><b>ESTABILIDADE GOLDHEN:</b> após carregar, abra <strong>GoldHEN &gt; Settings</strong> e deixe <strong>Enable Rest Mode Support DESMARCADO</strong>. Mantenha <strong>FTP Server</strong> e <strong>BinLoader</strong> desligados; se precisar do FTP, ative somente durante a transferência e desligue novamente antes de Reiniciar, Desligar ou usar Modo Repouso.</div>
     <div id="spin"></div>
     <div id="msg">Reinicie seu PS4 e tente novamente.</div>
     <div id="wrap">

@@ -28,6 +28,20 @@ Quando o cache estiver corretamente armazenado no console, os arquivos disponív
 
 > **Importante:** apagar cookies, dados de sites ou o cache do navegador do PS4 pode remover os arquivos armazenados para uso offline.
 
+## Recomendações de estabilidade do GoldHEN
+
+Depois que o GoldHEN carregar, recomenda-se conferir estas opções em **GoldHEN > Settings**:
+
+- deixar **Enable Rest Mode Support** desmarcado;
+- manter **FTP Server** desligado quando não estiver em uso;
+- manter **BinLoader** desligado quando não estiver em uso;
+- se precisar do FTP, ativá-lo apenas durante a transferência e desativá-lo novamente ao terminar;
+- antes de reiniciar, desligar ou entrar em modo de repouso, fechar jogos/homebrews e confirmar que FTP/BinLoader estão desligados.
+
+Se o console ainda apresentar travamento ao desligar ou reiniciar, um teste adicional é desmarcar temporariamente **Configurações > Rede > Conectar-se à Internet** antes da operação. Essas medidas são recomendações de estabilidade e não garantem eliminar todos os kernel panics em todas as combinações de firmware/GoldHEN.
+
+> **Importante:** a opção **Enable Rest Mode Support** não aparece no `config.ini` examinado, portanto o MATRIXPS4 apenas mostra a orientação; ele não altera essa opção automaticamente.
+
 ## Estrutura principal
 
 ```text
